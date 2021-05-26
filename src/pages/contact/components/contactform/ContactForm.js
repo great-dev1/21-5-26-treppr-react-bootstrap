@@ -29,9 +29,9 @@ function ContactForm() {
     setOverlay(false)
   }
 
-  const SERVICE_ID = "service_0c9v1gt"
-  const TEMPLATE_ID = "template_ocovej9"
-  const USER_ID = "user_XRVYEmQPf86c57uXLBnVY"
+  // const SERVICE_ID = "service_0c9v1gt"
+  // const TEMPLATE_ID = "template_ocovej9"
+  // const USER_ID = "user_XRVYEmQPf86c57uXLBnVY"
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -74,6 +74,7 @@ function ContactForm() {
                 className={darkMode ? "contact-input contact-input-dark" : "contact-input"}
                 type="text"
                 id="firstName"
+                value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
               />
             </div>
@@ -83,6 +84,7 @@ function ContactForm() {
                 className={darkMode ? "contact-input contact-input-dark" : "contact-input"}
                 type="text"
                 id="lastName"
+                value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
               />
             </div>
@@ -93,6 +95,7 @@ function ContactForm() {
               className={darkMode ? "contact-input contact-input-dark" : "contact-input"}
               type="email"
               id="email"
+              value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
@@ -102,6 +105,7 @@ function ContactForm() {
               className={darkMode ? "contact-input contact-input-dark" : "contact-input"}
               rows="5"
               id="message"
+              value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
