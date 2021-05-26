@@ -42,7 +42,12 @@ function ContactForm() {
       lastName: "last",
       email: "email@email.com",
       message: "message",
-    });
+    }, "user_XRVYEmQPf86c57uXLBnVY")
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      }, (err) => {
+        console.log('FAILED...', err);
+      })
   }
 
   // console.log("firstname", firstName)
