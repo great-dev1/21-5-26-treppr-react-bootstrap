@@ -29,20 +29,14 @@ function ContactForm() {
     setOverlay(false)
   }
 
-  // const SERVICE_ID = "service_0c9v1gt"
-  // const TEMPLATE_ID = "template_ocovej9"
-  // const USER_ID = "user_XRVYEmQPf86c57uXLBnVY"
+  const SERVICE_ID = "service_0c9v1gt"
+  const TEMPLATE_ID = "template_ocovej9"
+  const USER_ID = "user_XRVYEmQPf86c57uXLBnVY"
 
   const handleSubmit = (e) => {
     e.preventDefault()
     overlayOn()
-    // emailjs.send(SERVICE_ID, TEMPLATE_ID, { firstName, lastName, email, message, }, USER_ID);
-    emailjs.send("service_0c9v1gt", "template_ocovej9", {
-      firstName: "first",
-      lastName: "last",
-      email: "aries@robin.com",
-      message: "message",
-    }, "user_XRVYEmQPf86c57uXLBnVY")
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, { firstName, lastName, email, message, }, USER_ID)
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
       }, (err) => {
