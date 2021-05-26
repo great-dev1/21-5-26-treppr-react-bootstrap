@@ -36,7 +36,13 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault()
     overlayOn()
-    emailjs.send(SERVICE_ID, TEMPLATE_ID, { firstName, lastName, email, message, }, USER_ID);
+    // emailjs.send(SERVICE_ID, TEMPLATE_ID, { firstName, lastName, email, message, }, USER_ID);
+    emailjs.send("service_0c9v1gt", "template_ocovej9", {
+      firstName: "first",
+      lastName: "last",
+      email: "email@email.com",
+      message: "message",
+    });
   }
 
   // console.log("firstname", firstName)
