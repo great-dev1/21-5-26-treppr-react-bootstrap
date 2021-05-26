@@ -1,0 +1,143 @@
+/* Footer Main */
+
+.footer-main {
+  padding: 70px 0 0;
+  text-align: center;
+}
+
+.footer-content {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.currency-dropdown {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.currency-dropdown-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 97px;
+  height: 40px;
+  margin: auto;
+  padding: 0 12px;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(108, 108, 108, 0.08);
+  font-family: Johnson-Medium;
+  font-size: 14px;
+  color: #696969;
+  background-color: transparent;
+}
+
+.currency-dropdown-btn-dark {
+  color: #dedede;
+}
+
+.currency-dropdown-menu {
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 49px);
+  width: 98px;
+  padding: 5px 0;
+  margin-bottom: 0;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  color: #696969;
+  background-color: white;
+  list-style: none;
+  animation: simple-fadein 0.3s;
+}
+
+.currency-dropdown-menu-dark {
+  color: #dedede;
+  background-color: #171717;
+}
+
+.currency-dropdown-item {
+  padding: 5px 15px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.currency-dropdown-item:hover {
+  color: white;
+  background-color: #2a5eac;
+}
+
+.footer-link-group {
+  margin-bottom: 70px;
+}
+
+.footer-link-title {
+  margin-bottom: 11px;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.footer-link-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.footer-link {
+  margin-bottom: 2px;
+  font-family: Johnson-Light;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+/* Copyright */
+
+.copyright {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.copyright-text {
+  margin-bottom: 40px;
+  font-size: 11px;
+  line-height: 22px;
+}
+
+.copyright-logo {
+  margin: 0 5px 10px;
+}
+
+@media (min-width: 768px) {
+  .footer-main {
+    padding: 70px 97px 0;
+    text-align: left;
+  }
+  .currency-dropdown {
+    margin-top: 18px;
+    margin-bottom: 85px;
+  }
+  .currency-dropdown-btn {
+    margin: 0;
+  }
+  .currency-dropdown-menu {
+    left: auto;
+  }
+  .footer-link-group {
+    margin-bottom: 80px;
+  }
+
+  .copyright {
+    padding: 20px 97px;
+    text-align: left;
+  }
+  .copyright-logo {
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .copyright-text {
+    margin: 0;
+  }
+}

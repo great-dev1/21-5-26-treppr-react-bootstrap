@@ -1,0 +1,56 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 17px;
+  margin: 0;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 34px;
+  background-color: #dadada;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  bottom: -3px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #3d3d3d;
+  border-radius: 50%;
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.4);
+  background-color: #171717;
+  background-image: url("../../assets/images/Toggler/toggle-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  transform: rotate(0deg);
+}
+
+input:checked + .slider {
+  background-color: #555;
+}
+
+input:checked + .slider:before {
+  background-image: url("../../assets/images/Toggler/toggle-slider-dark.svg");
+  -webkit-transform: translateX(17px) rotate(-180deg);
+  -ms-transform: translateX(17px) rotate(-180deg);
+  transform: translateX(17px) rotate(-180deg);
+}

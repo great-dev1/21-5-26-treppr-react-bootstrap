@@ -1,0 +1,20 @@
+.section-title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-detail {
+  font-family: Johnson-Light;
+  font-size: 20px;
+  line-height: 31px;
+}
+
+@media (min-width: 992px) {
+  .section-title {
+    font-size: 33px;
+    line-height: 49px;
+  }
+}

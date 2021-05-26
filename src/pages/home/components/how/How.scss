@@ -1,0 +1,98 @@
+.how-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f9f9f9;
+}
+
+.how-section-dark {
+  background-color: #0e0e0e;
+}
+
+.how-title {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.how-subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.how-step-img {
+  margin: 60px 0;
+}
+
+.how-step-label {
+  margin-bottom: 14px;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.08em;
+  color: #2a5eac;
+}
+
+.how-step-label-dark {
+  color: #dedede;
+}
+
+.how-step-title {
+  margin-bottom: 19px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+}
+
+.how-step-detail {
+  max-width: 435px;
+  font-family: Johnson-Light;
+  font-size: 20px;
+  line-height: 31px;
+}
+
+@media (min-width: 992px) {
+  .how-section {
+    padding-top: 62px;
+    padding-bottom: 122px;
+  }
+  .how-title {
+    font-size: 33px;
+    line-height: 49px;
+  }
+  .how-step-label {
+    margin: 0;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .how-step-title {
+    margin-bottom: 8px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  .how-step-group {
+    max-width: 916px;
+    margin: 110px auto 0;
+  }
+  .how-step-item {
+    margin-bottom: 30px;
+  }
+  .how-step-img {
+    margin: 0;
+  }
+  .dotted-line {
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 32px;
+    border-left: 2px dashed #2a5eac;
+  }
+  .dotted-line-dark {
+    border-color: #545454;
+  }
+}

@@ -1,0 +1,60 @@
+.focus-container {
+  padding: 35px 20px;
+}
+
+.focus-title {
+  margin-bottom: 48px;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.focus-card-wrapper {
+  margin-bottom: 14px;
+  padding: 0 12px;
+}
+
+.focus-card {
+  height: 100%;
+  padding: 50px 30px;
+  border: 0.4px solid #dcdcdc;
+  border-radius: 5px;
+  box-shadow: 0 0 9px rgba(67, 67, 67, 0.06);
+  text-align: center;
+}
+
+.focus-card-dark {
+  border-color: #565656;
+}
+
+.focus-card-title {
+  margin: 32px 0 12px;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.focus-card-detail {
+  font-family: Johnson-Light;
+  font-size: 20px;
+  line-height: 31px;
+  text-align: left;
+}
+
+@media (min-width: 992px) {
+  .focus-container {
+    padding: 95px 96px 58px;
+  }
+  .focus-title {
+    margin-bottom: 74px;
+    font-size: 30px;
+    line-height: 44px;
+  }
+  .focus-card {
+    text-align: left;
+  }
+}

@@ -1,0 +1,49 @@
+.privacy-container {
+  padding: 40px 20px;
+}
+
+.privacy-content {
+  max-width: 760px;
+}
+
+.privacy-title {
+  margin-bottom: 23px;
+  font-family: Johnson-Light;
+  font-size: 40px;
+}
+
+.privacy-subtitle {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.privacy-detail {
+  font-size: 14px;
+}
+
+.privacy-list {
+  margin-bottom: 0;
+  padding-left: 25px;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .privacy-container {
+    padding: 50px 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .privacy-container {
+    padding: 72px 183px;
+  }
+  .privacy-title {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .privacy-container {
+    padding: 72px 300px;
+  }
+}

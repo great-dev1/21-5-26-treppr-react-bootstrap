@@ -1,0 +1,79 @@
+.seller-how {
+  padding: 77px 20px 120px;
+}
+
+.how-card-group {
+  margin-top: 45px;
+}
+
+.how-card-wrapper {
+  margin-bottom: 30px;
+}
+
+.how-card {
+  position: relative;
+  height: 100%;
+  padding: 20px;
+  border: 0.33338px solid #dcdcdc;
+  border-radius: 4px;
+  box-shadow: 0px 0px 7.50104px rgba(67, 67, 67, 0.06);
+  overflow: hidden;
+}
+
+.how-card-dark {
+  border-color: #565656;
+}
+
+.how-step-num {
+  position: absolute;
+  top: -35px;
+  right: -25px;
+  padding: 55px 41px 33px 21px;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 27px;
+  color: white;
+  background-color: #2a5eac;
+}
+
+.how-step-num-dark {
+  background-color: #333;
+}
+
+.how-card-img {
+  width: auto;
+  height: 183px;
+  object-fit: none;
+}
+
+.how-card-title {
+  margin: 32px 0 12px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.08em;
+  text-transform: capitalize;
+}
+
+.how-card-detail {
+  font-family: Johnson-Light;
+  font-size: 20px;
+  line-height: 31px;
+  letter-spacing: 0.08em;
+}
+
+@media (min-width: 992px) {
+  .seller-how {
+    padding: 56px 21px 27px;
+  }
+  .how-card-group {
+    margin-top: 80px;
+  }
+  .how-card-wrapper {
+    padding: 0 25px;
+  }
+  .how-card-title {
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+  }
+}

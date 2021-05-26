@@ -1,0 +1,40 @@
+.best-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 162px 0 138px;
+  text-align: center;
+  color: #dedede;
+  background-color: #373737;
+}
+
+.best-container-dark {
+  background-color: transparent;
+}
+
+.best-title {
+  margin-bottom: 54px;
+  padding: 0 15px;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.best-btn {
+  width: 241px;
+  padding: 13px 0;
+  font-size: 18px;
+}
+
+@media (min-width: 992px) {
+  .best-container {
+    padding: 117px 0 83px;
+  }
+  .best-title {
+    max-width: 987px;
+    margin-bottom: 50px;
+    font-size: 33px;
+    line-height: 49px;
+  }
+}

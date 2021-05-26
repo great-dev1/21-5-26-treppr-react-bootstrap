@@ -1,0 +1,31 @@
+.help-container {
+  padding: 50px 20px 95px;
+}
+
+.help-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.help-text {
+  margin-top: 53px;
+}
+
+@media (min-width: 576px) {
+  .help-img {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 992px) {
+  .help-container {
+    padding: 100px 65px 118px;
+  }
+  .help-img {
+    max-width: 565px;
+  }
+  .help-text {
+    max-width: 485px;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,389 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  height: 96px;
+  background-color: white;
+}
+
+.nav-bar-dark {
+  background-color: #020202;
+}
+
+@keyframes search-panel-fadein {
+  from {
+    top: -111px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes link-panel-fadein {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes nav-dropdown-fadein-1 {
+  from {
+    top: 45px;
+    opacity: 0;
+  }
+  to {
+    top: 65px;
+    opacity: 1;
+  }
+}
+
+@keyframes nav-dropdown-fadein-2 {
+  from {
+    left: 265px;
+    opacity: 0;
+  }
+  to {
+    left: 285px;
+    opacity: 1;
+  }
+}
+
+/* Navbar Left Part */
+
+.nav-dropdown-btn {
+  position: relative;
+  margin-right: 12px;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: black;
+  background-color: transparent;
+}
+
+.nav-dropdown-btn-dark {
+  color: white;
+}
+
+.nav-dropdown-btn:hover {
+  color: #aec2e1;
+  transition: 0.3s;
+}
+
+.nav-dropdown-menu {
+  position: fixed;
+  z-index: 2;
+  top: 65px;
+  left: 25px;
+  width: calc(100% - 50px);
+  margin-bottom: 0;
+  padding: 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.11);
+  font-family: Johnson-Light;
+  font-size: 18px;
+  line-height: 36px;
+  text-transform: capitalize;
+  color: black;
+  background-color: white;
+  list-style: none;
+  animation: nav-dropdown-fadein-1 0.3s;
+}
+
+.nav-dropdown-menu-dark {
+  color: #dedede;
+  background-color: #171717;
+}
+
+.nav-dropdown-submenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #d6d6d6;
+  cursor: pointer;
+}
+
+.nav-dropdown-submenu-dark {
+  border-bottom: 1px solid #252525;
+}
+
+.bold-text {
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-dropdown-container {
+  height: 421px;
+  padding: 15px 15px 15px 30px;
+  border-bottom: 1px solid #d6d6d6;
+  color: black;
+  background-color: white;
+  animation: nav-dropdown-fadein-2 0.3s;
+}
+
+.nav-dropdown-container-dark {
+  border-bottom: 1px solid #252525;
+  color: #dedede;
+  background-color: #171717;
+}
+
+.nav-dropdown-content {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 38px;
+  list-style: none;
+  overflow-y: auto;
+}
+
+/* Navbar Right Part */
+
+.search-icon,
+.toggle-icon {
+  margin-left: 13px;
+  background-color: transparent;
+}
+
+.search-input {
+  flex-grow: 1;
+  background-image: url("../../assets/images/Navbar/search-icon.svg");
+  background-repeat: no-repeat;
+  width: 160px;
+  padding: 10px;
+  border: 1px solid #c6c6c6;
+  border-radius: 9px;
+  text-indent: 23px;
+  color: black;
+  background-position: 13px;
+  background-color: transparent;
+}
+
+.search-input-dark {
+  color: white;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #a7a7a7;
+}
+
+.login-link {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.login-link:hover {
+  color: #aec2e1;
+}
+
+.sell-btn {
+  width: 74px;
+  padding: 12px 0;
+}
+
+@media (min-width: 768px) {
+  .nav-bar {
+    height: 77px;
+  }
+  .logo {
+    margin-right: 10px;
+  }
+  .nav-dropdown-btn {
+    font-size: 14px;
+  }
+  .nav-dropdown-menu {
+    position: absolute;
+    left: auto;
+    width: 285px;
+    min-height: 398px;
+    padding: 15px 40px;
+    border-radius: 0;
+  }
+  .how-menu {
+    min-height: auto;
+  }
+  .nav-dropdown-submenu {
+    padding: 0;
+    border: none;
+  }
+  .nav-dropdown-container {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 284px;
+    width: 284px;
+    height: 398px;
+    padding: 15px 15px 15px 30px;
+    border: none;
+    border-left: 1px solid #c4c4c4;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.11);
+  }
+  .nav-dropdown-container-dark {
+    border-left: 1px solid #252525;
+  }
+  .nav-dropdown-content {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    margin-right: 70px;
+  }
+  .nav-dropdown-btn {
+    margin-right: 30px;
+  }
+  .search-input {
+    width: 253px;
+  }
+  .login-link {
+    margin-left: 21px;
+    margin-right: 17px;
+  }
+}
+
+/* Mobile Search Panel */
+
+.mobile-search-panel {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.11);
+  background-color: white;
+  animation: search-panel-fadein 0.3s;
+}
+
+.mobile-search-panel-dark {
+  background-color: #171717;
+}
+
+.close-btn {
+  margin-bottom: 30px;
+  background-color: transparent;
+}
+
+.go-btn {
+  width: 67px;
+  padding: 12px 0;
+  margin-left: 3px;
+  border-radius: 9px !important;
+}
+
+.go-btn-dark {
+  color: black;
+  background-color: white;
+}
+
+.go-btn-dark:hover {
+  color: white;
+  background-color: grey;
+}
+
+@media (min-width: 768px) {
+  .mobile-search-panel {
+    display: none;
+  }
+}
+
+/* Mobile Link & Button Panel */
+
+.mobile-link-panel {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  width: calc(100% - 50px);
+  height: auto;
+  padding: 23px;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.11);
+  background-color: white;
+  animation: link-panel-fadein 0.3s;
+}
+
+.mobile-link-panel-dark {
+  background-color: #171717;
+}
+
+.mobile-link {
+  display: block;
+  margin-bottom: 30px;
+  // font-size: 16px;
+  // line-height: 1.5;
+  color: black;
+}
+
+.mobile-link-dark {
+  color: #dedede;
+}
+
+.mobile-btn {
+  width: 100%;
+  padding: 12px 0;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.mobile-btn-dark {
+  border-color: #dedede;
+  color: #dedede;
+}
+
+.mobile-btn:hover {
+  border: none;
+  color: white;
+  background-color: grey;
+  transition: 0.3s;
+}
+
+.mobile-sell-btn {
+  border: none;
+  color: white;
+  background-color: #2a5eac;
+}
+
+.mobile-sell-btn:hover {
+  background-color: #12438c;
+}
+
+@media (min-width: 768px) {
+  .mobile-link-panel {
+    display: none;
+  }
+}
+
+/* Black Overlay */
+
+.overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}

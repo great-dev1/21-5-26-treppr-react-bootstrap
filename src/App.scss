@@ -1,0 +1,115 @@
+/* Johnson Font */
+
+@font-face {
+  font-family: Johnson-Light;
+  src: url("./assets/fonts/johnson/johnston-itc-std-light.otf");
+}
+
+@font-face {
+  font-family: Johnson-Medium;
+  src: url("./assets/fonts/johnson/johnston-itc-std-medium.otf");
+}
+
+@font-face {
+  font-family: Johnson-Bold;
+  src: url("./assets/fonts/johnson/johnston-itc-std-bold.otf");
+}
+
+/* Roboto Font */
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url("./assets/fonts/roboto/Roboto-Medium.ttf");
+}
+
+/* General */
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  font-family: Johnson-Medium;
+  color: black;
+  background-color: white;
+}
+
+body.dark-mode {
+  color: #dedede;
+  background-color: #171717;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #aec2e1;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+input, button {
+  font-family: Johnson-Light;
+  font-size: 16px;
+  line-height: 1.0 !important;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #939393;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1288px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .container {
+    max-width: 1540px;
+  }
+}
+
+.blue-btn {
+  display: inline-block;
+  border-radius: 4px;
+  color: white;
+  background-color: #2a5eac;
+  transition: 0.3s;
+}
+
+.blue-btn-dark {
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.blue-btn:hover {
+  color: white;
+  background-color: #12438c;
+}
+
+.blue-btn-dark:hover {
+  color: black;
+  background-color: white;
+}

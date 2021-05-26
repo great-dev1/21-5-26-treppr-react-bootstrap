@@ -1,0 +1,198 @@
+.choose-flow-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 456px;
+  background-color: #202020;
+  overflow: hidden;
+}
+
+.choose-flow-container-dark {
+  background-color: #0f0f0f;
+}
+
+@keyframes slide-1 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-2079px, 0, 0);
+  }
+}
+
+.choose-flow-1 {
+  width: 6237px;
+  height: 186px;
+  margin-bottom: 17px;
+  animation: slide-1 60s linear infinite;
+}
+
+@keyframes slide-2 {
+  0% {
+    transform: translate3d(-100px, 0, 0);
+  }
+  100% {
+    transform: translate3d(-2179px, 0, 0);
+  }
+}
+
+.choose-flow-2 {
+  width: 6237px;
+  height: 186px;
+  animation: slide-2 60s linear infinite;
+}
+
+.choose-flow-item {
+  position: relative;
+}
+
+.choose-flow-img {
+  width: 215px;
+  height: 186px;
+  object-fit: cover;
+  border-radius: 23px;
+}
+
+.choose-flow-title {
+  position: absolute;
+  z-index: 1;
+  bottom: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 51px;
+  border-radius: 0 0 23px 23px;
+  font-family: Johnson-Light;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.68);
+}
+
+.choose-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 45px 21px 50px;
+  color: white;
+  background-color: #282828;
+}
+
+.choose-text-dark {
+  color: #dedede;
+  background-color: transparent;
+}
+
+.choose-subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ff8552;
+}
+
+.choose-subtitle-dark {
+  color: #aeaeae;
+}
+
+.choose-title {
+  margin: 14px 0 20px;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.choose-detail {
+  margin-bottom: 48px;
+  font-family: Johnson-Light;
+  font-size: 20px;
+  line-height: 31px;
+}
+
+.discover-btn {
+  width: 186px;
+  padding: 13px 0;
+  border-radius: 4px;
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  transition: 0.3s;
+}
+
+.discover-btn:hover {
+  background-color: grey;
+}
+
+.discover-btn-dark {
+  color: black;
+  background-color: #ff8552;
+}
+
+@media (min-width: 768px) {
+  .choose-text {
+    padding-left: 147px;
+  }
+  .choose-title {
+    max-width: 538px;
+    margin: 8px 0 22px;
+    font-size: 30px;
+    line-height: 44px;
+  }
+  .choose-detail {
+    max-width: 455px;
+    margin-bottom: 18px;
+    font-size: 22px;
+    line-height: 34px;
+  }
+}
+
+@media (min-width: 992px) {
+  .choose-flow-container {
+    flex-direction: row;
+    height: 569px;
+  }
+  @keyframes slide-1 {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, -1818px, 0);
+    }
+  }
+  .choose-flow-1 {
+    width: 215px;
+    height: 1818px;
+    margin-right: 17px;
+    animation: slide-1 60s linear infinite;
+  }
+  @keyframes slide-2 {
+    0% {
+      transform: translate3d(0, 50px, 0);
+    }
+    100% {
+      transform: translate3d(0, -1768px, 0);
+    }
+  }
+  .choose-flow-2 {
+    width: 215px;
+    height: 1818px;
+    animation: slide-2 60s linear infinite;
+  }
+}
+
+@media (min-width: 1600px) {
+  .choose-text {
+    padding-left: 200px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .choose-text {
+    padding-left: 280px;
+  }
+}

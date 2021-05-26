@@ -1,0 +1,35 @@
+.contact-hero-container {
+  padding: 75px 15px 24px;
+}
+
+.contact-hero-title {
+  margin-right: 40px;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-hero-subtitle {
+  margin-top: 19px;
+  font-family: Johnson-Light;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+}
+
+.contact-hero-detail {
+  font-family: Johnson-Light;
+  font-size: 17px;
+  line-height: 33px;
+}
+
+.contact-hero-link {
+  color: #2a5eac;
+  transition: 0.3s;
+}
+
+.contact-hero-link:hover {
+  text-decoration: underline;
+  color: #aec2e1;
+}
