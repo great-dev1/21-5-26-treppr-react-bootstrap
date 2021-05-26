@@ -40,7 +40,7 @@ function ContactForm() {
     emailjs.send("service_0c9v1gt", "template_ocovej9", {
       firstName: "first",
       lastName: "last",
-      email: "email@email.com",
+      email: "aries@robin.com",
       message: "message",
     }, "user_XRVYEmQPf86c57uXLBnVY")
       .then((response) => {
