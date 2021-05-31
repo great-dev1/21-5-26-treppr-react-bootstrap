@@ -35,6 +35,7 @@ function Intro() {
         <div className="col-lg-6 order-lg-1 d-flex justify-content-center align-items-end">
           <div className="intro-text-2">
             <div className="d-lg-flex align-items-end d-none">
+              {/* Community Icon */}
               <svg width="33" height="25" viewBox="0 0 33 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.3974 3.06249C19.3974 4.7545 18.027 6.12497 16.3349 6.12497C14.6429 6.12497 13.2725 4.7545 13.2725 3.06249C13.2725 1.37048 14.6429 0 16.3349 0C18.027 0 19.3974 1.37048 19.3974 3.06249Z" fill={darkMode ? "#00FFD1" : "#5278FF"} />
                 <path d="M8.16672 6.12499C8.16672 7.817 6.79625 9.18747 5.10423 9.18747C3.41413 9.18747 2.04175 7.817 2.04175 6.12499C2.04175 4.43298 3.41413 3.0625 5.10423 3.0625C6.79625 3.0625 8.16672 4.43298 8.16672 6.12499Z" fill={darkMode ? "#FF8552" : "#5278FF"} />

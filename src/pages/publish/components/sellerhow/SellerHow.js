@@ -26,7 +26,7 @@ function SellerHow() {
               Tell us about your business.
             </h4>
             <p className="how-card-detail">
-              Follow our simple to use specs platform to effectively communicate your idea to an aspiring entrepreneur.
+              Follow our simple to use specs platform to effectively communicate your business or idea to aspiring entrepreneurs.
             </p>
           </div>
         </div>
@@ -36,7 +36,7 @@ function SellerHow() {
             <div className={darkMode ? "how-step-num how-step-num-dark" : "how-step-num"}>STEP 2</div>
             <img className="how-card-img" src={darkMode ? HowImage2Dark : HowImage2} alt="how" />
             <h4 className="how-card-title">
-              Submit your idea to sell your business blueprint to aspiring entrepreneurs across the world.
+              Submit your business or idea on the Treppr platform so your business blueprint can be purchased by aspiring entrepreneurs across the world.
             </h4>
             <p className="how-card-detail">
               Once you fill out all the business information in our specs platform, your business or idea will be available for sale.
@@ -49,10 +49,10 @@ function SellerHow() {
             <div className={darkMode ? "how-step-num how-step-num-dark" : "how-step-num"}>STEP 3</div>
             <img className="how-card-img" src={darkMode ? HowImage3Dark : HowImage3} alt="how" />
             <h4 className="how-card-title">
-              Start to get sales now
+              Your business bluerprint is available for sale.
             </h4>
             <p className="how-card-detail">
-              Your business is available for sale and you can track revenues and connect with other entrepreneurs in the Treppr Community.
+              Earn commissions on the sale of your business blueprint to aspiring entrepreneurs. Track revenues and connect with other entrepreneurs in the Treppr Community.
             </p>
           </div>
         </div>

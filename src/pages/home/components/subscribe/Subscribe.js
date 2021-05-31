@@ -14,12 +14,6 @@ function Subscribe() {
         <img className="img-fluid" src={darkMode ? SubscribeImageDark : SubscribeImage} alt="subscribe" />
         <div className="subscribe-form">
           <h2 className={darkMode ? "subscribe-title subscribe-title-dark" : "subscribe-title"}>SUBSCRIBE TO BE THE FIRST TO KNOW!</h2>
-          <div className="d-flex flex-column flex-lg-row flex-wrap">
-            {/* <input className={darkMode ? "subscribe-name-input subscribe-name-input-dark" : "subscribe-name-input"} type="text" placeholder="First Name" />
-            <input className={darkMode ? "subscribe-email-input subscribe-email-input-dark" : "subscribe-email-input"} type="email" placeholder="Email Address" />
-            <button className={darkMode ? "subscribe-btn blue-btn subscribe-btn-dark" : "subscribe-btn blue-btn"} type="submit">Subscribe Now</button> */}
-          </div>
-
           <div id="609710479dd07cb71ed04935">
             <div id="609710479dd07cb71ed04935-form" className="609710479dd07cb71ed04935-template">
               <div id="selected-_9c47g1l2n" className="ap3w-embeddable-form ap3w-embeddable-form--full ap3w-embeddable-form--solid " data-select="true">

@@ -66,9 +66,11 @@ button {
 }
 
 input, button {
+  padding: 11px 10px;
   font-family: Johnson-Light;
   font-size: 16px;
-  line-height: 1.0 !important;
+  line-height: 1.2;
+  vertical-align: middle;
 }
 
 input:focus {

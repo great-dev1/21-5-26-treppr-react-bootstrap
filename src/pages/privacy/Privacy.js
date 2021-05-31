@@ -177,7 +177,7 @@ function Privacy() {
           but not in a manner that would identify you personally. Once the retention period expires, Personal Information
           shall be deleted. Therefore, the right to access, the right to erasure, the right to rectification and the right
           to data portability cannot be enforced after the expiration of the retention period.
-          </p>
+        </p>
 
         <h4 className="privacy-subtitle">
           Transfer of information

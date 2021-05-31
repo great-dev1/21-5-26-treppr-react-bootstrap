@@ -123,7 +123,7 @@ function Terms() {
           responsibility or liability for the actions, products, services, and content of any other third parties. You should
           carefully review the legal statements and other conditions of use of any resource which you access through a link
           on the Website and Services. Your linking to any other off-site resources is at your own risk.
-          </p>
+        </p>
 
         <h4 className="privacy-subtitle">
           Prohibited uses

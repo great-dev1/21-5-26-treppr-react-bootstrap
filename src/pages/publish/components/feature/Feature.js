@@ -21,18 +21,18 @@ function Feature() {
           <div className="d-block d-lg-none">
             {featureNum === 0 &&
               <h2 className="feature-text section-title">
-                The most amazing platform, helpS you create a valuable business BLUE PRINT WITH EASE.
-                </h2>
+                THE MOST AMAZING PLATFORM, HELPS YOU CREATE A VALUABLE BUSINESS BLUEPRINT WITH EASE.
+              </h2>
             }
             {featureNum === 1 &&
               <h2 className="feature-text section-title">
-                The most amazing platform, can help you create a valuable business idea
-                </h2>
+                TREPPR OPENS THE DOOR TO A FLEXIBLE APPROACH TO CREATING YOUR PROCESSES
+              </h2>
             }
             {featureNum === 2 &&
               <h2 className="feature-text section-title">
-                The most amazing platform, can help you create a valuable business idea
-                </h2>
+                TERPPR'S MARKETPLACE AND IDEA PRESENTATION PAGE WILL HELP YOU SOLVE YOUR SALES AND CONVERSION PROBLEMS.
+              </h2>
             }
           </div>
 
@@ -74,30 +74,30 @@ function Feature() {
           {featureNum === 0 &&
             <div>
               <h2 className="feature-text section-title d-none d-lg-block">
-                The most amazing platform, helpS you create a valuable business BLUE PRINT WITH EASE.
+                THE MOST AMAZING PLATFORM, HELPS YOU CREATE A VALUABLE BUSINESS BLUEPRINT WITH EASE.
               </h2>
               <p className="feature-text section-detail mt-2 mt-lg-0">
-                Treppr guides you step by step to pitch your idea in a storytelling way to make your idea into valuable blueprint.
+                Treppr guides you step-by-step to tell your idea through storytelling, making your idea an invaluable blueprint.
               </p>
             </div>
           }
           {featureNum === 1 &&
             <div>
               <h2 className="feature-text section-title d-none d-lg-block">
-                The most amazing platform, can help you create a valuable business idea
+                TREPPR OPENS THE DOOR TO A FLEXIBLE APPROACH TO CREATING YOUR PROCESSES
               </h2>
               <p className="feature-text section-detail mt-2 mt-lg-0">
-                Treppr gives your more control over your business blueprint. Treppr provides you with an open platform so you can build a business plan any way you want.
+                By using Treppr, you can easily share your business idea knowledge with aspiring entrepreneurs. Whether it be videos embedded, written content or documents uploaded.
               </p>
             </div>
           }
           {featureNum === 2 &&
             <div>
               <h2 className="feature-text section-title d-none d-lg-block">
-                The most amazing platform, can help you create a valuable business idea
+                TERPPR 'S MARKETPLACE AND IDEA PRESENTATION PAGE WILL HELP YOU SOLVE YOUR SALES AND CONVERSION PROBLEMS.
               </h2>
               <p className="feature-text section-detail mt-2 mt-lg-0">
-                Treppr presents your idea in an engaging way that helps you sell your ideas. With a user-friendly and accessible platform to demonstrate your product's key points in order to catch the audience's eye to ultimately achieve your sales goals.
+                Treppr presents your idea in an engaging way that helps you sell your business blueprint or idea. With an easy to use, auto-assist platform, you can reach a global audience to maximize your sales.
               </p>
             </div>
           }

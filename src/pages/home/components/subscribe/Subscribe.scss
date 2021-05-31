@@ -23,7 +23,6 @@
 .subscribe-name-input,
 .subscribe-email-input {
   width: 100%;
-  padding: 12px 10px;
   margin-bottom: 18px;
   border: 1px solid #cacaca;
   border-radius: 6px;
@@ -41,7 +40,7 @@
 .subscribe-btn {
   width: 100%;
   margin-bottom: 18px;
-  padding: 14px 0;
+  border: 1px solid transparent;
 }
 
 .subscribe-btn-dark {

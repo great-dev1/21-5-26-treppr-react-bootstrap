@@ -138,6 +138,9 @@ function Footer() {
                   <li className="footer-link">
                     <a href="/acceptable-use-policy">Acceptable Use Policy</a>
                   </li>
+                  <li className="footer-link">
+                    <a href="/disclaimer-policy">Disclaimer Policy</a>
+                  </li>
                 </ul>
               </div>
 
@@ -145,7 +148,7 @@ function Footer() {
                 <h4 className="footer-link-title">Follow Us</h4>
                 <ul className="footer-link-list">
                   <li className="footer-link">
-                    <a href="/">Facebook</a>
+                    <a href="https://www.facebook.com/treppr">Facebook</a>
                   </li>
                   <li className="footer-link">
                     <a href="https://www.linkedin.com/company/treppr-inc">Linkedin</a>

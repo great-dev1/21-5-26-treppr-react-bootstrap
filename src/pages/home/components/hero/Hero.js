@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useState, useContext } from 'react'
 
 import { ViewModeContext } from '../../../../App'
 import './Hero.scss'
@@ -6,6 +6,12 @@ import Toggler from '../../../../components/toggler/Toggler'
 
 function Hero() {
   const { darkMode } = useContext(ViewModeContext)
+
+  const [validity, setValidity] = useState(false)
+
+  const handleChange = (e) => {
+    setValidity(document.getElementById("email").checkValidity())
+  }
 
   return (
     <div className="hero-container container text-center">
@@ -17,10 +23,17 @@ function Hero() {
         SUCCESSFUL BUSINESS
       </h1>
 
-      <div className="d-flex flex-column flex-md-row justify-content-center">
-        <input className={darkMode ? "hero-email-input hero-email-input-dark" : "hero-email-input"} type="email" placeholder="Email Address*" />
-        <button className={darkMode ? "hero-btn hero-btn-dark" : "hero-btn"} type="submit">Find Business Ideas</button>
-      </div>
+      <form className="d-flex flex-column flex-md-row justify-content-center was-validated">
+        <input
+          className={darkMode ? "hero-email-input hero-email-input-dark" : "hero-email-input"}
+          type="email"
+          id="email"
+          placeholder="Email Address*"
+          onChange={handleChange}
+          required
+        />
+        <button className={darkMode ? "hero-btn hero-btn-dark" : "hero-btn"} type="submit" disabled={!validity}>Find Business Ideas</button>
+      </form>
 
       <p className={darkMode ? "hero-detail hero-detail-dark" : "hero-detail"}>
         We never share or sell your data, we take <a className="privacy-link" href="/privacy-policy">privacy</a> very seriously.

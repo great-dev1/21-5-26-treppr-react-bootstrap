@@ -10,7 +10,7 @@ function Focus() {
     <div className="focus-container container">
       <h2 className="focus-title">
         FOCUS ON BUILDING YOUR BUSINESS<br className="d-none d-lg-block" />
-        WITH TREPPRS RESOURCES
+        WITH TREPPR'S RESOURCES
       </h2>
 
       <div className="row">
@@ -29,7 +29,7 @@ function Focus() {
               Target market insights to help you easily take your business to market
             </h4>
             <p className="focus-card-detail">
-              Treppr provides you with a starting point and the process you need to succeed.
+              Treppr platform provides you with a starting point and the process you need to succeed.
             </p>
           </div>
         </div>

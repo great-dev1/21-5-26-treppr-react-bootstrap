@@ -11,6 +11,7 @@ import Publish from './pages/publish/Publish'
 import Terms from './pages/terms/Terms'
 import Privacy from './pages/privacy/Privacy'
 import UsePolicy from './pages/usepolicy/UsePolicy'
+import Disclaimer from './pages/disclaimer/Disclaimer'
 import Contact from './pages/contact/Contact'
 
 export const ViewModeContext = createContext()
@@ -50,6 +51,9 @@ function App() {
           </Route>
           <Route path="/acceptable-use-policy">
             <UsePolicy />
+          </Route>
+          <Route path="/disclaimer-policy">
+            <Disclaimer />
           </Route>
           <Route path="/contact">
             <Contact />

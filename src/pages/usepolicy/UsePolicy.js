@@ -138,7 +138,7 @@ function UsePolicy() {
         <p className="privacy-detail">
           We reserve our right to be the sole arbiter in determining the seriousness of each infringement and to immediately
           take corrective actions, including but not limited to:
-          </p>
+        </p>
 
         <ul className="privacy-list">
           <li>Suspending or terminating your Service with or without notice upon any violation of this Policy. Any violations may also result in the immediate suspension or termination of your account.</li>

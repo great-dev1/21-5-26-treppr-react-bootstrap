@@ -26,7 +26,6 @@
 
 .hero-email-input {
   width: 100%;
-  padding: 12px 10px;
   margin-bottom: 13px;
   border: 1px solid #cacaca;
   border-radius: 6px;
@@ -43,10 +42,11 @@
 
 .hero-btn {
   width: 100%;
-  padding: 14px 0;
+  border: 1px solid transparent;
   border-radius: 6px;
   color: white;
   background-color: #1b1b1b;
+  transition: 0.3s;
 }
 
 .hero-btn-dark {
@@ -56,7 +56,17 @@
 
 .hero-btn:hover {
   background-color: grey;
-  transition: 0.3s;
+}
+
+.hero-btn:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.hero-btn-dark:disabled {
+  background-color: #ff8552;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .hero-detail {

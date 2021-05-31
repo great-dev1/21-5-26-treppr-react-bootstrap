@@ -10,6 +10,7 @@ function ContactForm() {
   const { darkMode } = useContext(ViewModeContext)
 
   const [topic, setTopic] = useState("")
+  const [otherTopic, setOtherTopic] = useState("")
 
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
@@ -29,39 +30,69 @@ function ContactForm() {
     setOverlay(false)
   }
 
-  const SERVICE_ID = "service_iw3bbde"
-  const TEMPLATE_ID = "template_ocovej9"
-  const USER_ID = "user_XRVYEmQPf86c57uXLBnVY"
+  const SERVICE_ID = "service_ttiq5mr"
+  const TEMPLATE_ID = "template_fezg9os"
+  const USER_ID = "user_WKriTHLVMI9X0aimmEV2L"
 
   const handleSubmit = (e) => {
     e.preventDefault()
     overlayOn()
-    emailjs.send(SERVICE_ID, TEMPLATE_ID, { firstName, lastName, email, message, }, USER_ID)
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, { firstName, lastName, email, message, topic, otherTopic }, USER_ID)
       .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
+        console.log('SUCCESS!', response.status, response.text)
       }, (err) => {
-        console.log('FAILED...', err);
+        console.log('FAILED...', err)
       })
   }
-
-  // console.log("firstname", firstName)
 
   return (
     <div className={darkMode ? "contact-form-container contact-form-container-dark" : "contact-form-container"}>
       <form className={darkMode ? "contact-form contact-form-dark" : "contact-form"}>
         <label>Select a Topic:</label>
         <div>
-          <div className={topic === "selling" ? "contact-topic-btn-active" : (darkMode ? "contact-topic-btn-dark" : "contact-topic-btn")} onClick={() => setTopic("selling")}>Selling on Treppr</div>
-          <div className={topic === "buying" ? "contact-topic-btn-active" : (darkMode ? "contact-topic-btn-dark" : "contact-topic-btn")} onClick={() => setTopic("buying")}>Buying on Treppr</div>
-          <div className={topic === "community" ? "contact-topic-btn-active" : (darkMode ? "contact-topic-btn-dark" : "contact-topic-btn")} onClick={() => setTopic("community")}>Treppr Community</div>
-          <div className={topic === "media" ? "contact-topic-btn-active" : (darkMode ? "contact-topic-btn-dark" : "contact-topic-btn")} onClick={() => setTopic("media")}>Affiliation / Media</div>
-          <div className={topic === "other" ? "contact-topic-btn-active" : (darkMode ? "contact-topic-btn-dark" : "contact-topic-btn")} onClick={() => setTopic("other")}>Other</div>
+          <div
+            className={topic === "selling" ? "contact-topic-btn-active" : (darkMode ? "contact-topic-btn-dark" : "contact-topic-btn")}
+            onClick={() => { setTopic("selling"); setOtherTopic("") }}
+          >
+            Selling on Treppr
+          </div>
+          <div
+            className={topic === "buying" ? "contact-topic-btn-active" : (darkMode ? "contact-topic-btn-dark" : "contact-topic-btn")}
+            onClick={() => { setTopic("buying"); setOtherTopic("") }}
+          >
+            Buying on Treppr
+          </div>
+          <div
+            className={topic === "community" ? "contact-topic-btn-active" : (darkMode ? "contact-topic-btn-dark" : "contact-topic-btn")}
+            onClick={() => { setTopic("community"); setOtherTopic("") }}
+          >
+            Treppr Community
+          </div>
+          <div
+            className={topic === "media" ? "contact-topic-btn-active" : (darkMode ? "contact-topic-btn-dark" : "contact-topic-btn")}
+            onClick={() => { setTopic("media"); setOtherTopic("") }}
+          >
+            Affiliation / Media
+          </div>
+          <div
+            className={topic === "other" ? "contact-topic-btn-active" : (darkMode ? "contact-topic-btn-dark" : "contact-topic-btn")}
+            onClick={() => { setTopic("other"); setOtherTopic("") }}
+          >
+            Other
+          </div>
         </div>
 
         {topic === "other" &&
           <div className="form-group">
-            <label className="contact-form-label" htmlFor="topic">Topic<span className="red-label">*</span></label>
-            <input className={darkMode ? "contact-input contact-input-dark" : "contact-input"} type="text" id="topic" />
+            <label className="contact-form-label" htmlFor="otherTopic">Topic<span className="red-label">*</span></label>
+            <input
+              className={darkMode ? "contact-input contact-input-dark" : "contact-input"}
+              type="text"
+              id="otherTopic"
+              value={otherTopic}
+              onChange={(e) => setOtherTopic(e.target.value)}
+              required
+            />
           </div>
         }
 
@@ -73,8 +104,8 @@ function ContactForm() {
                 className={darkMode ? "contact-input contact-input-dark" : "contact-input"}
                 type="text"
                 id="firstName"
-                value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
+                required
               />
             </div>
             <div className="form-group flex-grow-1 ml-md-1">
@@ -83,8 +114,8 @@ function ContactForm() {
                 className={darkMode ? "contact-input contact-input-dark" : "contact-input"}
                 type="text"
                 id="lastName"
-                value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
+                required
               />
             </div>
           </div>
@@ -94,8 +125,8 @@ function ContactForm() {
               className={darkMode ? "contact-input contact-input-dark" : "contact-input"}
               type="email"
               id="email"
-              value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </div>
           <div className="form-group">
@@ -104,8 +135,8 @@ function ContactForm() {
               className={darkMode ? "contact-input contact-input-dark" : "contact-input"}
               rows="5"
               id="message"
-              value={message}
               onChange={(e) => setMessage(e.target.value)}
+              required
             />
           </div>
         </div>

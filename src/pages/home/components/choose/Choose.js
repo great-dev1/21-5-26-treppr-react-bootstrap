@@ -178,11 +178,10 @@ function Choose() {
         <div className={darkMode ? "choose-text choose-text-dark" : "choose-text"}>
           <h4 className={darkMode ? "choose-subtitle choose-subtitle-dark" : "choose-subtitle"}>FIND ONE TO START NOW</h4>
           <h2 className="choose-title">
-            CHOOSE FROM AN ARRAY OF UNIQUE BUSINESS IDEAS THAT SUITE YOUR LIFESTYLE.
+            Choose from an array of unique business ideas that suit your lifestyle.
           </h2>
           <p className="choose-detail">
-            All we care about is to help you find the idea that matches to your interest
-            and your skills to help you to be successes.
+            Use the Treppr platform to find and start a successful business that matches your interest and skills.
           </p>
           <button className={darkMode ? "discover-btn discover-btn-dark" : "discover-btn"}>Discover Ideas</button>
         </div>
