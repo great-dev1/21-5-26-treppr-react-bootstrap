@@ -28,7 +28,7 @@ function Hero() {
           className={darkMode ? "hero-email-input hero-email-input-dark" : "hero-email-input"}
           type="email"
           id="email"
-          placeholder="Email Address*"
+          placeholder="Email Address"
           onChange={handleChange}
           required
         />
