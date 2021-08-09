@@ -1,4 +1,5 @@
 import CountUp from 'react-countup'
+import { Link } from 'react-scroll'
 import './PreHero.scss'
 import Logo from '../../assets/images/logo.svg'
 import BackImage1 from '../../assets/images/hero-back-1.svg'
@@ -21,7 +22,9 @@ function PreHero() {
           <img className="logo" src={Logo} alt="logo" />
         </a>
         <h2 className="title">Earn while helping others build their businesses</h2>
-        <button className="button">GET EARLY ACCESS</button>
+        <Link className="button" to="joinSection" spy={true} smooth={true} duration={1000}>
+          GET EARLY ACCESS
+        </Link>
         <h4 className="subtitle">LIMITED SEATS AVAILABLE</h4>
 
         <div className="stats row">

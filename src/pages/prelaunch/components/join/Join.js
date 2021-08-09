@@ -27,7 +27,7 @@ function Join() {
   }
 
   return (
-    <div className="join">
+    <div className="join" id="joinSection">
       <div className="container">
         <div className="content text-center">
           <div className="drone-animation">
