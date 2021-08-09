@@ -1,0 +1,78 @@
+.potential {
+  background-color: white;
+}
+
+.potential-dark {
+  background-color: #18181b;
+}
+
+.left {
+  padding: 26px 30px;
+
+  .subtitle {
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    color: #5278ff;
+  }
+
+  .title {
+    max-width: 580px;
+    margin-bottom: 32px;
+    font-family: Rubik-Bold;
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: 0.03em;
+    color: #0a2046;
+  }
+
+  .title-dark {
+    color: white;
+  }
+
+  .detail {
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 31px;
+    color: #1f1f1f;
+  }
+
+  .detail-dark {
+    color: #b0b0b0;
+  }
+}
+
+.arrow-icon {
+  margin: 20px 0 20px 40px;
+}
+
+.mode-text {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-family: Johnson-Light;
+  color: black;
+}
+
+.mode-text-dark {
+  color: white;
+}
+
+.potential-img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .left {
+    .title {
+      font-size: 36px;
+      line-height: 53px;
+    }
+    .detail {
+      margin-bottom: 30px;
+    }
+  }
+  .mode-text {
+    margin-bottom: 0;
+  }
+}

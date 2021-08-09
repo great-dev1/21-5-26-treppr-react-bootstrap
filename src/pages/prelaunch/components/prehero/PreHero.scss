@@ -1,0 +1,142 @@
+.pre-hero {
+  position: relative;
+  padding: 26px 0 42px;
+  background-color: #e7ecff;
+
+  .back-1 {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+
+  .back-2 {
+    position: absolute;
+    z-index: 0;
+    // left: calc(53vw - 766px);
+    left: 0;
+    bottom: 0;
+  }
+
+  .back-mobile-1 {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+  }
+
+  .back-mobile-2 {
+    position: absolute;
+    z-index: 0;
+    // left: calc(77vw - 289px);
+    left: 0;
+    bottom: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .logo {
+    width: 109px;
+    height: auto;
+  }
+
+  .title {
+    max-width: 540px;
+    margin: 93px auto 19px;
+    font-family: Rubik-Bold;
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: 0.03em;
+    color: #0a2046;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 254px;
+    height: 44px;
+    margin: 0 auto 24px;
+    border-radius: 14px;
+    border-top-left-radius: 0;
+    font-family: Johnson-Light;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: white;
+    background-color: #194ba0;
+
+    &:hover {
+      background-color: #12438c;
+      transition: 0.3s;
+    }
+  }
+
+  .subtitle {
+    margin-bottom: 62px;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.13em;
+    color: rgba(0, 0, 0, 0.42);
+  }
+
+  .stats {
+    max-width: 740px;
+    margin: auto;
+
+    .item {
+      margin-bottom: 34px;
+      text-align: left;
+    }
+
+    .number {
+      margin-bottom: 7px;
+      font-family: Johnson-Light;
+      font-size: 42px;
+      line-height: 39px;
+      letter-spacing: 0.03em;
+      color: #5278ff;
+    }
+
+    .detail {
+      font-size: 14px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #515151;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .pre-hero {
+    padding: 30px 0 10px;
+
+    .logo {
+      width: 85px;
+    }
+
+    .title {
+      margin-bottom: 87px;
+      font-size: 36px;
+      line-height: 53px;
+    }
+
+    .button {
+      margin-bottom: 35px;
+    }
+
+    .subtitle {
+      margin-bottom: 155px;
+    }
+
+    .stats {
+      .item {
+        text-align: center;
+      }
+    }
+  }
+}

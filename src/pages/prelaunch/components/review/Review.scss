@@ -1,0 +1,68 @@
+.review {
+  padding: 27px 0;
+  background-color: white;
+
+  .title {
+    margin-bottom: 53px;
+    font-family: Rubik-Bold;
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #0a2046;
+  }
+
+  .avatar {
+    width: 80px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .detail {
+    position: relative;
+    max-width: 540px;
+    margin-left: 30px;
+    margin-bottom: 16px;
+    font-size: 17px;
+    line-height: 27px;
+    color: #232323;
+  }
+
+  .quote-mark {
+    position: absolute;
+    top: -20px;
+    left: -18px;
+    font-family: Rubik-Bold;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: 0.03em;
+    color: #0a2046;
+  }
+
+  .name {
+    margin-left: 30px;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #527bff;
+  }
+
+  .grow-img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .review {
+    padding: 80px 15px 72px;
+
+    .title {
+      margin-bottom: 27px;
+      font-size: 36px;
+      line-height: 53px;
+    }
+  }
+}

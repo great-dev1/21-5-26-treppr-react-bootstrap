@@ -1,0 +1,153 @@
+.join {
+  background-color: #f2f5ff;
+
+  .content {
+    position: relative;
+    padding: 20px 0 90px;
+  }
+
+  .title {
+    max-width: 766px;
+    margin: 0 auto 18px;
+    font-family: Rubik-Bold;
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: 0.03em;
+    color: #0a2046;
+  }
+
+  .join-form {
+    max-width: 400px;
+    margin: auto;
+
+    .email-input {
+      width: 100%;
+      height: 44px;
+      margin-bottom: 18px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: 1px solid #ddd;
+      border-radius: 14px;
+      border-top-left-radius: 0;
+    }
+
+    .join-dropdown {
+      position: relative;
+      margin-bottom: 65px;
+
+      .join-dropdown-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 44px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 14px;
+        border-top-left-radius: 0;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+        letter-spacing: 0.06em;
+        color: #504848;
+        background-color: white;
+      }
+
+      .join-dropdown-menu {
+        position: absolute;
+        z-index: 1;
+        top: 45px;
+        width: 100%;
+        max-width: 400px;
+        padding: 6px 0;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+        background-color: white;
+        list-style: none;
+
+        .join-dropdown-item {
+          cursor: pointer;
+          font-size: 16px;
+          line-height: 32px;
+          color: #504848;
+          background-color: white;
+
+          &:hover {
+            color: white;
+            background-color: #2a5eac;
+          }
+        }
+      }
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 44px;
+      margin: 0 auto 45px;
+      border-radius: 14px;
+      border-top-left-radius: 0;
+      font-family: Johnson-Light;
+      font-size: 15px;
+      line-height: 30px;
+      letter-spacing: 0.06em;
+      color: white;
+      background-color: #194ba0;
+
+      &:hover {
+        background-color: #12438c;
+        transition: 0.3s;
+      }
+    }
+
+    .subtitle {
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 0.13em;
+      color: rgba(0, 0, 0, 0.42);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .join {
+    background-color: white;
+
+    .content {
+      padding: 64px 15px 130px;
+      border-radius: 60px;
+      background-color: #f2f5ff;
+    }
+
+    .title {
+      margin-bottom: 58px;
+      font-size: 36px;
+      line-height: 53px;
+    }
+
+    .button {
+      margin-bottom: 47px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .join {
+    .drone-animation {
+      position: absolute;
+      z-index: 1;
+      top: 200px;
+      left: 5%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .join {
+    .drone-animation {
+      position: absolute;
+      z-index: 1;
+      top: 200px;
+      left: 10%;
+    }
+  }
+}

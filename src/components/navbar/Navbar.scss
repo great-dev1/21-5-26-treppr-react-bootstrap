@@ -188,15 +188,16 @@
 
 .sell-btn {
   width: 74px;
-  line-height: 1.0;
+  line-height: 1;
 }
 
 @media (min-width: 768px) {
   .nav-bar {
     height: 77px;
-  }
-  .logo {
-    margin-right: 10px;
+
+    .logo {
+      margin-right: 10px;
+    }
   }
   .nav-dropdown-btn {
     font-size: 14px;
@@ -238,8 +239,10 @@
 }
 
 @media (min-width: 1200px) {
-  .logo {
-    margin-right: 70px;
+  .nav-bar {
+    .logo {
+      margin-right: 70px;
+    }
   }
   .nav-dropdown-btn {
     margin-right: 30px;

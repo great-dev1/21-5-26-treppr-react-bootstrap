@@ -1,0 +1,28 @@
+.pre-footer {
+  padding: 48px 15px;
+  color: black;
+  background-color: white;
+
+  .logo {
+    margin-bottom: 56px;
+  }
+
+  .text {
+    margin-bottom: 10px;
+    font-size: 11px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pre-footer {
+    padding: 120px 15px 77px;
+
+    .logo {
+      margin-bottom: 0;
+    }
+    .text {
+      margin-bottom: 0;
+    }
+  }
+}

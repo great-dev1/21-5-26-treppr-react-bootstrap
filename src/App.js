@@ -1,11 +1,10 @@
-import { useEffect, createContext, useReducer } from 'react'
+import { useReducer, useEffect, createContext } from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 
 import './App.scss'
-import Navbar from './components/navbar/Navbar'
-import Footer from './components/footer/Footer'
+import Layout from './components/layout/Layout'
 import Home from './pages/home/Home'
 import Publish from './pages/publish/Publish'
 import Terms from './pages/terms/Terms'
@@ -13,6 +12,7 @@ import Privacy from './pages/privacy/Privacy'
 import UsePolicy from './pages/usepolicy/UsePolicy'
 import Disclaimer from './pages/disclaimer/Disclaimer'
 import Contact from './pages/contact/Contact'
+import Prelaunch from './pages/prelaunch/Preluanch'
 
 export const ViewModeContext = createContext()
 
@@ -37,33 +37,48 @@ function App() {
 
   return (
     <ViewModeContext.Provider value={{ darkMode, toggleDarkMode }}>
-      <Navbar />
       <BrowserRouter>
         <Switch>
           <Route path="/publish">
-            <Publish />
+            <Layout>
+              <Publish />
+            </Layout>
           </Route>
           <Route path="/terms-and-conditions">
-            <Terms />
+            <Layout>
+              <Terms />
+            </Layout>
           </Route>
           <Route path="/privacy-policy">
-            <Privacy />
+            <Layout>
+              <Privacy />
+            </Layout>
           </Route>
           <Route path="/acceptable-use-policy">
-            <UsePolicy />
+            <Layout>
+              <UsePolicy />
+            </Layout>
           </Route>
           <Route path="/disclaimer-policy">
-            <Disclaimer />
+            <Layout>
+              <Disclaimer />
+            </Layout>
           </Route>
           <Route path="/contact">
-            <Contact />
+            <Layout>
+              <Contact />
+            </Layout>
+          </Route>
+          <Route path="/prelaunch">
+            <Prelaunch />
           </Route>
           <Route path="/">
-            <Home />
+            <Layout>
+              <Home />
+            </Layout>
           </Route>
         </Switch>
       </BrowserRouter>
-      <Footer />
     </ViewModeContext.Provider>
   )
 }

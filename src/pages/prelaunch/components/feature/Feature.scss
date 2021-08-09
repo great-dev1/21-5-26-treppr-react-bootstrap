@@ -1,0 +1,52 @@
+.feature {
+  padding: 70px 15px 0;
+  background-color: white;
+
+  .title {
+    margin-bottom: 34px;
+    font-family: Rubik-Bold;
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: 0.03em;
+    color: #0a2046;
+  }
+
+  .item {
+    height: 100%;
+    padding: 20px 25px 40px;
+    border: 5px solid #f2f5ff;
+    border-radius: 15px;
+
+    .img {
+      width: auto;
+      height: 44px;
+    }
+
+    .subtitle {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      font-size: 24px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: #0a2046;
+    }
+
+    .detail {
+      font-size: 17px;
+      line-height: 27px;
+      color: #232323;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .feature {
+    padding: 78px 15px 40px;
+
+    .title {
+      margin-bottom: 104px;
+      font-size: 36px;
+      line-height: 53px;
+    }
+  }
+}

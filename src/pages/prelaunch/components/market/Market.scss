@@ -1,0 +1,88 @@
+.market {
+  position: relative;
+  padding: 32px 0 0;
+  background-color: white;
+
+  .back-img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+  }
+
+  .container {
+    border-bottom: 1px solid #bebebe;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #5278ff;
+  }
+
+  .title {
+    max-width: 648px;
+    margin: 4px auto 60px;
+    font-family: Rubik-Bold;
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #0a2046;
+  }
+
+  .market-feature {
+    text-align: left;
+
+    .item {
+      margin-bottom: 50px;
+      padding: 0 25px;
+
+      .feature-img {
+        width: auto;
+        height: 90px;
+      }
+
+      .feature-title {
+        margin: 20px 0 10px;
+        font-family: Rubik-Regular;
+        font-size: 25px;
+        line-height: 37px;
+        letter-spacing: 0.03em;
+        color: #0a2046;
+      }
+
+      .feature-detail {
+        font-size: 18px;
+        line-height: 27px;
+        color: #232323;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .market {
+    padding: 107px 15px 50px;
+
+    .title {
+      margin: 16px auto 90px;
+      font-size: 36px;
+      line-height: 53px;
+    }
+
+    .feature {
+      .item {
+        padding: 0 36px;
+      }
+
+      .feature-title {
+        margin: 26px 0 20px;
+        font-size: 29px;
+        line-height: 43px;
+      }
+    }
+  }
+}
