@@ -18,9 +18,7 @@ function PreHero() {
 
       {/* Content */}
       <div className="container text-center">
-        <a href="/">
-          <img className="logo" src={Logo} alt="logo" />
-        </a>
+        <img className="logo" src={Logo} alt="logo" />
         <h2 className="title">Earn while helping others build their businesses</h2>
         <Link className="button" to="joinSection" spy={true} smooth={true} duration={1000}>
           GET EARLY ACCESS
@@ -30,27 +28,27 @@ function PreHero() {
         <div className="stats row">
           <div className="item col-6 col-md-3">
             <h4 className="number">
-              <CountUp end={250} duration={1} />
+              <CountUp end={250} duration={3} />
               +
             </h4>
             <p className="detail">Industries</p>
           </div>
           <div className="item col-6 col-md-3">
             <h4 className="number">
-              <CountUp end={27} duration={1} />
+              <CountUp end={27} duration={3} />
             </h4>
             <p className="detail">Business Models</p>
           </div>
           <div className="item col-6 col-md-3">
             <h4 className="number">
-              <CountUp end={100} duration={1} />
+              <CountUp end={100} duration={3} />
               %
             </h4>
             <p className="detail">Community</p>
           </div>
           <div className="item col-6 col-md-3">
             <h4 className="number">
-              <CountUp end={44} duration={1} />
+              <CountUp end={44} duration={3} />
             </h4>
             <p className="detail">Countries</p>
           </div>

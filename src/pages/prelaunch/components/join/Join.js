@@ -7,6 +7,9 @@ import DownArrow from '../../assets/images/down-arrow.svg'
 function Join() {
   const [showJoinMenu, setJoinMenu] = useState(false)
   const [joinType, setJoinType] = useState("I am looking to...")
+  const [showWelcome, setWelcome] = useState(false)
+
+  console.log("SHOWWELCOME", showWelcome)
 
   const toggleJoinMenu = () => {
     setJoinMenu(!showJoinMenu)
@@ -40,7 +43,8 @@ function Join() {
           <h2 className="title">
             Join early to access and experience the Treppr platform before the masses
           </h2>
-          <div className="join-form">
+          {/* Join Form */}
+          <div className={showWelcome ? "join-form invisible" : "join-form"}>
             <input className="email-input" type="email" placeholder="Email Address" />
             <div className="join-dropdown">
               <button className="join-dropdown-btn" onClick={toggleJoinMenu}>
@@ -55,8 +59,13 @@ function Join() {
                 </ul>
               }
             </div>
-            <button className="button">GET EARLY ACCESS</button>
+            <button className="button" onClick={() => setWelcome(true)}>GET EARLY ACCESS</button>
             <h4 className="subtitle">LIMITED SEATS AVAILABLE</h4>
+
+            {/* Welcome Message */}
+            <div className={showWelcome ? "welcome-msg" : "invisible"}>
+              <h2>Thank you</h2>
+            </div>
           </div>
         </div>
       </div>

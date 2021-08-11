@@ -163,7 +163,7 @@ function Footer() {
       <div className="copyright d-flex flex-column flex-lg-row justify-content-between align-items-center">
         <p className="copyright-text">
           © 2021 Treppr Inc. All Rights Reserved.<br />
-          Powered By <a className="contact-hero-link" href="https://www.blanspace.ca">Blank Space</a>
+          Powered By <a className="contact-hero-link" href="https://www.blankspace.ca">Blank Space</a>
         </p>
 
         <div className="copyright-logo-group d-flex justify-content-center flex-wrap mx-n3">

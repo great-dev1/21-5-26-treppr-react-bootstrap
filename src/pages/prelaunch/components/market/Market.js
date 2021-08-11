@@ -10,9 +10,6 @@ function Market() {
   let date = today.getDate() + 10
   let month = months[today.getMonth()]
 
-  console.log("date", date)
-  console.log("month", month)
-
   return (
     <div className="market">
       <img className="back-img d-none d-md-block" src={BackImage} alt="back" />
